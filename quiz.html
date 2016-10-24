@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Time!</title>
+    <link href="seatwork4.css" rel="stylesheet">
+    <link href=
+    "https://fonts.googleapis.com/css?family=Fredoka+One|Raleway|Playfair+Display"
+    rel="stylesheet">
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity=
+    "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    rel="stylesheet">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</head>
+<body>
+    <div id="bluebackground">
+        <img id="logo" src="logonew.png">
+        <div class="welcome">
+            <p>WELCOME TO MY QUIZ WEBSITE!</p>
+        </div>
+    </div>
+    <div id="purple"></div>
+    <div id="parentcontainer">
+        <div id="flowers">
+            Retrogaming, also known as classic gaming and old school gaming, is
+            the playing or collecting of older personal computer, console, and
+            arcade video games in contemporary times. Usually retrogaming is
+            based upon systems that are obsolete or discontinued.
+        </div>
+        <div id="navigation">
+            <div id="menu1">
+                <a href="seatwork4.html">HOME</a>
+            </div>
+            <div id="menu2">
+                <a href="quiz.html">QUIZ</a>
+            </div>
+            <div id="menu3">
+                <a href="pacman.html">PAC-MAN</a>
+            </div>
+            <div id="menu3">
+                <a href="contra.html">CONTRA</a>
+            </div>
+            <div id="menu3">
+                <a href="kungfu.html">KUNG FU MASTER</a>
+            </div>
+        </div>
+        <div id="whitecontainer">
+            <div id='container'>
+                <div id='title'>
+                    <p>Video Games Quiz</p>
+                </div>
+                <div id='title2' style="display: none">
+                    <p>Let's see how you did!</p>
+                </div>
+                <div id='quiz'></div><button id="next">Next</button>
+                <button id="prev">Back</button> <button id="start">Start
+                Over</button> <button id="view">View Results</button>
+                <button id="answerz">Answers</button>
+                <div id="progBar">
+                    <span id="status">Quiz Progress</span><br>
+                </div>
+                <div id="progBars">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow=
+                    "40" class=
+                    "progress-bar progress-bar-info progress-bar-striped active"
+                    id="bars" role="progressbar" style=
+                    "max-width:100%;width:0%;">
+                        <div id="label">
+                            0%
+                        </div>
+                    </div>
+                </div>
+                <div id="containerBars" style="display:none">
+                    <div id="answers" style="display:none">
+                        <p id="numRestart">1</p>
+                        <p id="correct0">0</p>
+                        <p id="correct1">0</p>
+                        <p id="correct2">0</p>
+                        <p id="correct3">0</p>
+                        <p id="correct4">0</p>
+                        <p id="correct5">0</p>
+                        <p id="correct6">0</p>
+                        <p id="correct7">0</p>
+                        <p id="correct8">0</p>
+                        <p id="correct9">0</p>
+                    </div>
+                    <div id="answerKey" style="display:none">
+                        <div id="questionKey">
+                            Question 1
+                        </div>
+                        <div id="corrects0">
+                            This is one positive aspect of retro games. The
+                            idea of fantasy was no stranger when it came to the
+                            world of retro videogaming, making many classic
+                            games of the day exercise beautiful, imaginative
+                            madness.
+                        </div>
+                        <div id="answ">
+                            Answer: Realism Optional
+                        </div>
+                        <div id="questionKey">
+                            Question 2
+                        </div>
+                        <div id="corrects0">
+                            An arcade game developed in 1982 by Gottlieb. It
+                            features an orange critter with a large nose. The
+                            game is played by moving the character between the
+                            squares.
+                        </div>
+                        <div id="answ">
+                            Answer: Q*Bert
+                        </div>
+                        <div id="questionKey">
+                            Question 3
+                        </div>
+                        <div id="corrects0">
+                            Popular belief among those who played the original
+                            NES held that doing this removed dust from the
+                            contacts, which allowed a better connection to the
+                            system. It was later proven that this does not
+                            actually solve the problem.
+                        </div>
+                        <div id="answ">
+                            Answer: Blowing into the NES cartridge
+                        </div>
+                        <div id="questionKey">
+                            Question 4
+                        </div>
+                        <div id="corrects0">
+                            A video game series produced by Konami, centers
+                            around two commandos named Bill Rizer and Lance
+                            Bean, who are members of a special guerrilla task
+                            force to thwart an army of alien invaders seeking
+                            to destroy the Earth.
+                        </div>
+                        <div id="answ">
+                            Answer: Contra
+                        </div>
+                        <div id="questionKey">
+                            Question 5
+                        </div>
+                        <div id="corrects0">
+                            Unless you were a PC gamer, with your favorite
+                            console there was no need to install any aspect of
+                            games onto any hard drives back in the 80s and 90s.
+                        </div>
+                        <div id="answ">
+                            Answer: True
+                        </div>
+                        <div id="questionKey">
+                            Question 6
+                        </div>
+                        <div id="corrects0">
+                            This is another positive aspect of classic games.
+                            It is the idea of playing the same games over and
+                            over again, or acquiring multiple lives throughout
+                            the game.
+                        </div>
+                        <div id="answ">
+                            Answer: Replayability
+                        </div>
+                        <div id="questionKey">
+                            Question 7
+                        </div>
+                        <div id="corrects0">
+                            An arcade game developed by Namco and first
+                            released in Japan in May 1980. The player controls
+                            the character through a maze, eating pac-dots (also
+                            called biscuits or just dots).
+                        </div>
+                        <div id="answ">
+                            Answer: Pac-Man
+                        </div>
+                        <div id="questionKey">
+                            Question 8
+                        </div>
+                        <div id="corrects0">
+                            An arcade fighting game developed and published by
+                            Midway Games in 1992. The game focuses on the
+                            journey of the monk Liu Kang to save Earth from the
+                            evil sorcerer Shang Tsung. It also sparked much
+                            controversy for its depiction of extreme violence
+                            and gore.
+                        </div>
+                        <div id="answ">
+                            Answer: Mortal Kombat
+                        </div>
+                        <div id="questionKey">
+                            Question 9
+                        </div>
+                        <div id="corrects0">
+                            Duck Hunt is a shooter game developed by Nintendo
+                            in which the objective is to shoot moving targets
+                            (ducks) on the television screen in mid-flight. It
+                            also features a non-playable character that is
+                            iconic for laughing at the player whenever he fails
+                            to shoot any of the ducks on screen. This character
+                            has been labelled as 'one of the most annoying
+                            video game characters ever.'
+                        </div>
+                        <div id="answ">
+                            Answer: Laughing Dog
+                        </div>
+                        <div id="questionKey">
+                            Question 10
+                        </div>
+                        <div id="corrects0">
+                            Super Mario is a series of platform video games
+                            created by Nintendo. The main objective of the game
+                            was rescuing the kidnapped princess from the
+                            primary antagonist, Bowser. What is the name of
+                            this princess?
+                        </div>
+                        <div id="answ">
+                            Answer: Princess Peach Toadstool
+                        </div>
+                    </div>
+                    <div id="progressBarsDiv" style="display: none">
+                        <div id="resultDescription" style="display: none">
+                            Your results:
+                        </div>
+                        <div id="analysis1">
+                            Question 1 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar0" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label0">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 2 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar1" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label1">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 3 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar2" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label2">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 4 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar3" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label3">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 5 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar4" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label4">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 6 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar5" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label5">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 7 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar6" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label6">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 8 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar7" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label7">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 9 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar8" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label8">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div id="analysis1">
+                            Question 10 of 10
+                        </div>
+                        <div id="analysisBars">
+                            <div aria-valuemax="100" aria-valuemin="0"
+                            aria-valuenow="40" class=
+                            "progress-bar progress-bar-info progress-bar-striped active"
+                            id="bar9" role="progressbar" style=
+                            "max-width:100%;width:0%;">
+                                <div id="label9">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src=
+                'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+                type='text/javascript'>
+                </script> 
+                <script src=
+                "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+                </script> 
+                <script type='text/javascript'>
+
+                (function() {
+                var questions = [{
+                question:"This is one positive aspect of retro games. The idea of fantasy was no stranger when it came to the world of retro videogaming, making many classic games of the day exercise beautiful, imaginative madness.",
+                choices: [" Realism Optional", " Cheat Codes", " Replayability", " Gameplay Focus"],
+                correctAnswer: 0
+
+                }, {
+                question: "An arcade game developed in 1982 by Gottlieb. It features an orange critter with a large nose. The game is played by moving the character between the squares.",
+                choices: [" Pac-Man", " Donkey Kong", " Q*Bert", " Megaman"],
+                correctAnswer: 2
+
+                }, {
+                question: "Popular belief among those who played the original NES held that doing this removed dust from the contacts, which allowed a better connection to the system. It was later proven that this does not actually solve the problem.",
+                choices: [" Cursing when the system did not work", " Rebooting the system", " Plugging the cartridge in", " Blowing into the NES cartridge"],
+                correctAnswer: 3
+
+                }, {
+                question: "A video game series produced by Konami, centers around two commandos named Bill Rizer and Lance Bean, who are members of a special guerrilla task force to thwart an army of alien invaders seeking to destroy the Earth.",
+                choices: [" Mario Brothers", " Contra", " Pac-Man", " Space Invaders"],
+                correctAnswer: 1
+
+                }, {
+                question: "Unless you were a PC gamer, with your favorite console there was no need to install any aspect of games onto any hard drives back in the 80s and 90s.",
+                choices: [" True", " False", " All of the above", " None of the above"],
+                correctAnswer: 0
+
+                }, {
+                question: "This is another positive aspect of classic games. It is the idea of playing the same games over and over again, or acquiring multiple lives throughout the game.",
+                choices: [" Local Multiplayer", " Replayability", " Physical Media", " Realism Optional"],
+                correctAnswer: 1
+
+                }, {
+                question: "An arcade game developed by Namco and first released in Japan in May 1980. The player controls the character through a maze, eating pac-dots (also called biscuits or just dots).",
+                choices: [" Donkey Kong", " Space Invaders", " Mortal Kombat", " Pac-Man"],
+                correctAnswer: 3
+
+                }, {
+                question: "An arcade fighting game developed and published by Midway Games in 1992. The game focuses on the journey of the monk Liu Kang to save Earth from the evil sorcerer Shang Tsung. It also sparked much controversy for its depiction of extreme violence and gore.",
+                choices: [" Street Fighter", " Mortal Kombat", " Contra", " Diablo"],
+                correctAnswer: 1
+
+                }, {
+                question: "Duck Hunt is a shooter game developed by Nintendo in which the objective is to shoot moving targets (ducks) on the television screen in mid-flight. It also features a non-playable character that is iconic for laughing at the player whenever he fails to shoot any of the ducks on screen. This character has been labelled as 'one of the most annoying video game characters ever.'",
+                choices: [" Laughing Dog", " Vault Boy", " Miner Willy", " Link"],
+                correctAnswer: 0
+
+                }, {
+                question: "Super Mario is a series of platform video games created by Nintendo. The main objective of the game was rescuing the kidnapped princess from the primary antagonist, Bowser. What is the name of this princess?",
+                choices: [" Princess Bubblegum", " Princess Peach Toadstool", " Princess Yoshi", " Princess Rosalina"],
+                correctAnswer: 1
+
+                }];
+
+                var val=0; //initializing progress bar value to 0
+                var questionCounter = 0; //Tracks question number
+                var selections = []; //Array containing user choices
+                var quiz = $('#quiz'); //Quiz div object
+                var res = 1;
+
+                // Display initial question
+                displayNext();
+
+
+                $('#answerz').on('click', function (e) {
+                $('#answerz').hide();
+                $('#view').show();
+                $('#answerKey').show();
+                $("#analysis1").hide();
+                $("#progBars").hide();
+                $("#bars").hide();
+                $("#status").hide();
+
+
+                });
+
+
+                $('#view').on('click', function (e) {
+                $('#start').show();
+                $('#view').hide();
+                $('#answerz').show();
+                $('#answerKey').hide();
+                $('#progress').hide();
+                $('#title2').show();
+                $('#title').hide();
+                $('#quiz').show();
+                $("#status").show();
+                $("#progBars").show();
+                $("#bars").show();
+                $("#analysis1").show();
+                $("#progressBarsDiv").show();
+                $("#containerBars").show();
+                                $("#bar0").show();
+
+
+
+
+                quizAnalysis();
+                result();
+
+                });
+
+                // Click handler for the 'next' button
+                $('#next').on('click', function (e) {
+                e.preventDefault();
+                $('#answerz').hide();
+
+
+                // Suspend click listener during fade animation
+                if(quiz.is(':animated')) {        
+                return false;
+                }
+                choose();
+
+                // If no user selection, progress is stopped
+                if (isNaN(selections[questionCounter])) {
+                alert('You must select an answer to continue.');
+                } else {
+                questionCounter++;
+                displayNext();
+                displayProgress();
+                }
+                });
+
+                // Click handler for the 'prev' button
+                $('#prev').on('click', function (e) {
+                e.preventDefault();
+                $('#answerz').hide();
+
+
+                if(quiz.is(':animated')) {
+                return false;
+                }
+                choose();
+                questionCounter--;
+                displayNext();
+                prevProgress();
+                });
+
+
+                // Click handler for the 'Start Over' button
+                $('#start').on('click', function (e) {
+                e.preventDefault();
+                $('#title2').hide();
+                $('#title').show();
+                $('#answerz').hide();
+                $('#answerKey').hide();
+
+
+
+                if(quiz.is(':animated')) {
+                return false;
+                }
+                $("#resultDescription").hide();
+                questionCounter = 0;
+                selections = [];
+                destroyProgress();
+                displayNext();
+                res = res+1;
+                document.getElementById("numRestart").innerHTML = res;
+                $("#progressBarsDiv").hide();
+                $('#start').hide();
+                $('#view').hide();
+                $('#answerKey').hide();
+
+                });
+
+
+
+                function createQuestionElement(index) {
+                $('#answerKey').hide();
+
+                var qElement = $('<div>', {
+                id: 'question'
+                });
+
+                var header = $('<h2> Question No ' + (index + 1) + '<\/h2>');
+                qElement.append(header);
+
+                var question = $('<p>').append(questions[index].question);
+                qElement.append(question);
+
+                var radioButtons = createRadios(index);
+                qElement.append(radioButtons);
+
+                return qElement;
+                }
+
+                function createRadios(index) {
+                var radioList = $('<ul>');
+                var item;
+                var input = '';
+                for (var i = 0; i < questions[index].choices.length; i++) {
+                item = $('<li>');
+                input = '<input type="radio" name="answer" value='+i+ ' />';
+                input += questions[index].choices[i];
+                item.append(input);
+                radioList.append(item);
+                }
+                return radioList;
+                }
+
+                function choose() {
+                selections[questionCounter] = +$('input[name="answer"]:checked').val();
+                }
+
+                function displayNext() {
+                quiz.fadeOut(function() {
+                $('#question').remove();
+
+
+                if(questionCounter < questions.length){
+                var nextQuestion = createQuestionElement(questionCounter);
+
+                quiz.append(nextQuestion).fadeIn();
+                if (!(isNaN(selections[questionCounter]))) {
+                $('input[value='+selections[questionCounter]+']').prop('checked', true);
+                }
+
+                if(questionCounter === 1){
+                $('#prev').show();
+                } else if(questionCounter === 0){
+
+                $('#prev').hide();
+                $('#next').show();
+                $('#view').hide();
+                $('#start').hide();
+                $('#answerz').hide();
+                $('#answerKey').hide();
+
+                }
+
+                }else {
+                var scoreElem = displayScore();
+                quiz.append(scoreElem).fadeIn();
+
+                $('#next').hide();
+                $('#prev').hide();
+                $('#start').show();
+                $('#view').show();
+                $('#answerz').hide();
+
+
+                }
+                });
+                }
+
+                // Computes score and returns a paragraph element to be displayed
+                function displayScore() {
+                var score = $('<p>',{id: 'question'});
+                var correctNum0 = document.getElementById("correct0").innerHTML;
+                var correctNum1 = document.getElementById("correct1").innerHTML;
+                var correctNum2 = document.getElementById("correct2").innerHTML;
+                var correctNum3 = document.getElementById("correct3").innerHTML;
+                var correctNum4 = document.getElementById("correct4").innerHTML;
+                var correctNum5 = document.getElementById("correct5").innerHTML;
+                var correctNum6 = document.getElementById("correct6").innerHTML;
+                var correctNum7 = document.getElementById("correct7").innerHTML;
+                var correctNum8 = document.getElementById("correct8").innerHTML;
+                var correctNum9 = document.getElementById("correct9").innerHTML;
+
+                { if (selections[0] === questions[0].correctAnswer) {
+                correctNum0++ ;
+                document.getElementById("correct0").innerHTML = correctNum0++;
+                }
+                }
+                { if (selections[1] === questions[1].correctAnswer) {
+                correctNum1++ ;
+                document.getElementById("correct1").innerHTML = correctNum1++;
+                }
+                }
+                { if (selections[2] === questions[2].correctAnswer) {
+                correctNum2++ ;
+                document.getElementById("correct2").innerHTML = correctNum2++;
+                }
+                }
+                { if (selections[3] === questions[3].correctAnswer) {
+                correctNum3++ ;
+                document.getElementById("correct3").innerHTML = correctNum3++;
+                }
+                }
+                { if (selections[4] === questions[4].correctAnswer) {
+                correctNum4++ ;
+                document.getElementById("correct4").innerHTML = correctNum4++;
+                }
+                }
+                { if (selections[5] === questions[5].correctAnswer) {
+                correctNum5++ ;
+                document.getElementById("correct5").innerHTML = correctNum5++;
+                }
+                }
+                { if (selections[6] === questions[6].correctAnswer) {
+                correctNum6++ ;
+                document.getElementById("correct6").innerHTML = correctNum6++;
+                }
+                }
+                { if (selections[7] === questions[7].correctAnswer) {
+                correctNum7++ ;
+                document.getElementById("correct7").innerHTML = correctNum7++;
+                }
+                }
+                { if (selections[8] === questions[8].correctAnswer) {
+                correctNum8++ ;
+                document.getElementById("correct8").innerHTML = correctNum8++;
+                }
+                }
+                { if (selections[9] === questions[9].correctAnswer) {
+                correctNum9++ ;
+                document.getElementById("correct9").innerHTML = correctNum9++;
+                }
+                }
+
+                score.append('<h2> Awesome job, player! <h2>');
+                score.append(' You have successfully completed this quiz. You may click on Start Over to retake this quiz or go to View Results to see how you did.');
+                return score;
+                }
+
+
+                function quizAnalysis(){
+                $('#containerBars').show();
+
+                document.getElementById("progressBarsDiv").style.display = "block";
+                document.getElementById("resultDescription").style.display = "block";
+                document.getElementById("quiz").style.display = "none";
+                var percent = "%";
+
+                var restimes = document.getElementById("numRestart").innerHTML;
+
+                var correct0 = document.getElementById("correct0").innerHTML;
+                var correct1 = document.getElementById("correct1").innerHTML;
+                var correct2 = document.getElementById("correct2").innerHTML;
+                var correct3 = document.getElementById("correct3").innerHTML;
+                var correct4 = document.getElementById("correct4").innerHTML;
+                var correct5 = document.getElementById("correct5").innerHTML;
+                var correct6 = document.getElementById("correct6").innerHTML;
+                var correct7 = document.getElementById("correct7").innerHTML;
+                var correct8 = document.getElementById("correct8").innerHTML;
+                var correct9 = document.getElementById("correct9").innerHTML;
+
+                total0 = Math.round(correct0 / restimes*100);
+                final0 = total0 + percent;
+                document.getElementById("label0").innerHTML = final0;
+                $("#bar0").css('width',final0);
+
+
+                total1 = Math.round(correct1 / restimes*100);
+                final1 = total1 + percent;
+                document.getElementById("label1").innerHTML = final1;
+                $("#bar1").css('width',final1);
+
+                total2 = Math.round(correct2 / restimes *100);
+                final2 = total2 + percent;
+                document.getElementById("label2").innerHTML = final2;
+                $("#bar2").css('width',final2);
+
+                total3 = Math.round(correct3 / restimes *100);
+                final3 = total3 + percent;
+                document.getElementById("label3").innerHTML = final3;
+                $("#bar3").css('width',final3);
+
+                total4 = Math.round(correct4 / restimes*100);
+                final4 = total4 + percent;
+                document.getElementById("label4").innerHTML = final4;
+                $("#bar4").css('width',final4);
+
+                total5 = Math.round(correct5 / restimes*100);
+                final5 = total5 + percent;
+                document.getElementById("label5").innerHTML = final5;
+                $("#bar5").css('width',final5);
+
+                total6 = Math.round(correct6 / restimes*100);
+                final6 = total6 + percent;
+                document.getElementById("label6").innerHTML = final6;
+                $("#bar6").css('width',final6);
+
+                total7 = Math.round(correct7 / restimes * 100);
+                final7 = total7 + percent;
+                document.getElementById("label7").innerHTML = final7;
+                $("#bar7").css('width',final7);
+
+
+                total8 = Math.round(correct8 / restimes *100);
+                final8 = total8 + percent;
+                document.getElementById("label8").innerHTML = final8;
+                $("#bar8").css('width',final8);
+
+                total9 = Math.round(correct9 / restimes *100);
+                final9 = total9 + percent;
+                document.getElementById("label9").innerHTML = final9;
+                $("#bar9").css('width',final9);
+                }
+
+                function result() {
+                $('#progress').show();
+
+                var numCorrect = 0;
+                for (var i = 0; i < selections.length; i++) {
+                if (selections[i] === questions[i].correctAnswer) {
+                numCorrect++;
+                }
+                }
+                var percentage = Math.round(numCorrect / questions.length * 100); 
+                $("#bars").css("width", percentage + "%");
+                $("#bars").html(percentage + "%");
+                $("#status").html("You scored "+numCorrect+" /10 in this quiz.");
+                return numCorrect;
+                }
+
+                function displayProgress() {
+                val++;
+                var percent = (val / questions.length) * 100 ;
+
+                if (percent < 100 ) {
+                $('#bars').css('width', percent + '%');
+                $("#bars").html(percent + "%");
+                $("#status").html("Quiz Progress: " + val+" of 10");
+                document.getElementById("label").innerHTML = percent + "%";
+                }
+                else if (percent == 100 ) {
+                val = 0; 
+                $('#bars').css('width', percent + '%');
+                $("#bars").html(percent + "%");
+                $("#status").html("Quiz Progress: 10 of 10");
+                document.getElementById("label").innerHTML = percent + "%";
+                }
+
+                else if ( percent > 100) {
+                $('#progress').hide();
+                val = 0;
+                $('#bars').css('width', percent + '%');
+                $("#bars").html(percent + "%");
+                document.getElementById("label").innerHTML = percent + "%";    }}
+
+
+
+                function prevProgress() {
+                val--;
+                var percent = (val / questions.length) * 100;
+                $('#bars').css('width', percent + '%');
+                $("#bars").html(percent + "%");
+                $("#status").html("Quiz Progress: " + val+" of 10");
+                document.getElementById("label").innerHTML = percent + "%";
+                }
+
+                function destroyProgress() {
+                $("#bars").css("width",0);
+                $("#bars").html(0); 
+                $("#status").html("Quiz Progress: " + val+" of 10");
+                $('#progress').hide();
+                }
+
+
+
+                })();
+
+
+
+                $('#bars').animate({
+                }, 2500);
+
+                $('#analysisBars').animate({
+                }, 2500);
+
+
+
+
+
+                </script> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

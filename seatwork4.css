@@ -1,0 +1,614 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(retro.jpg);
+    background-size: 120%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#bluebackground {
+    width: 100%;
+    background-color: #691A99;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    margin-top: -100px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+#purple {
+    width: 100%;
+    background-color: #9C27B0;
+    height: 25px;
+    position: fixed;
+    z-index: 1;
+    margin-top: -58px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+#parentcontainer {
+    width: 80%;
+    min-width: 1000px;
+    background-color: none;
+    margin: auto;
+    margin-top: 100px;
+    height: 1000px;
+    z-index: 1;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin: -3px;
+    margin-left: 140px;
+    margin-right: 20px;
+}
+
+.welcome {
+    font-family: 'Fredoka One',cursive;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#flowers {
+    font-family: 'Fredoka One',cursive;
+    font-size: 110%;
+    font-weight: 700;
+    background-image: url(header.jpg);
+    height: 180px;
+    color: #fff;
+    margin-top: 60px;
+    border-radius: 12px;
+    padding: 1%;
+    background-size: 100%;
+    background-position: center;
+    -webkit-filter: drop-shadow(5px 5px 5px white);
+    filter: drop-shadow(1px 5px 10px #AB47BC);
+    color: #fff;
+    text-shadow: 1px 1px 2px black,0 0 25px #18FFFF,0 0 5px #18FFFF;
+    box-shadow: 1px 1px 1px grey;
+}
+
+#navigation {
+    width: 100%;
+    background-color: #7a1ea1;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #fff;
+    font-family: arial;
+    font-size: 90%;
+    display: inline-block;
+    box-shadow: 1px 1px 1px #000;
+}
+
+#menu1 {
+    display: inline-block;
+    background-color: none;
+    margin-left: 3%;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Fredoka One',cursive;
+    font-weight: 700;
+}
+
+#menu2 {
+    display: inline-block;
+    background-color: none;
+    margin-left: 3%;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Fredoka One',cursive;
+    font-weight: 700;
+}
+
+#menu3 {
+    display: inline-block;
+    background-color: none;
+    margin-left: 3%;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Fredoka One',cursive;
+    font-weight: 700;
+}
+
+#whitecontainer {
+    width: 100%;
+    margin: auto;
+    background-color: #000;
+    height: auto;
+    overflow: auto;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 0 #000 solid;
+    background-color: rgba(255,255,255,0.4);
+    padding-bottom: 60px;
+}
+
+#whitecontainer1 {
+    width: 100%;
+    margin: auto;
+    background-color: #000;
+    height: auto;
+    overflow: auto;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 0 #000 solid;
+    background-color: rgba(255,255,255,0.2);
+    padding-bottom: 60px;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 25px 40px 10px;
+    background-color: #fff;
+    color: #FFF;
+    height: auto;
+}
+
+#container1 {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0 25px 40px 10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 1px 1px 2px grey;
+    color: #E0E0E0;
+    height: 3000px;
+}
+
+#container2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0 25px 40px 10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 1px 1px 2px grey;
+    color: #E0E0E0;
+    height: auto;
+}
+
+#title {
+    text-decoration: none;
+    color: #616161;
+    font-size: 35px;
+    font-family: 'Raleway',sans-serif;
+    border-bottom: 1px #FFEB3B solid;
+    height: 80px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#title2 {
+    text-decoration: none;
+    color: #616161;
+    font-size: 35px;
+    font-family: 'Raleway',sans-serif;
+    border-bottom: 1px #FFEB3B solid;
+    height: 80px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#titleHome {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+    background-color: ;
+    border-bottom: 1px #BDBDBD solid;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#info {
+    color: grey;
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    text-align: left;
+    background-color: none;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+#quiz {
+    display: none;
+    color: #424242;
+    font-size: 18px;
+    font-family: 'Playfair Display',serif;
+    margin-top: -50px;
+    height: 280px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    background-color: none;
+    overflow-y: none;
+}
+
+.button a:active {
+    background-color: none;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: #68EFAD !important;
+    text-decoration: none;
+}
+
+.button a:link {
+    color: #68EFAD !important;
+    text-decoration: none;
+}
+
+#next {
+    width: 100px;
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    background-color: #fff;
+    border: 1px solid grey;
+    margin: 20px;
+}
+
+#prev {
+    width: 100px;
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    background-color: #fff;
+    border: 1px solid grey;
+    margin: 20px;
+    margin-left: -10px;
+}
+
+#view {
+    width: 100px;
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    background-color: #fff;
+    border: 1px solid grey;
+    margin: 20px;
+    margin-left: -10px;
+}
+
+#start {
+    width: 100px;
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    background-color: #fff;
+    border: 1px solid grey;
+    margin: 20px;
+}
+
+#answerz {
+    width: 100px;
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    background-color: #fff;
+    border: 1px solid grey;
+    margin: 20px;
+    margin-left: -10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: #68EFAD !important;
+    text-decoration: none;
+}
+
+.fixed-content {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+video {
+    margin-top: 50px;
+}
+
+#duckhuntdiv {
+    background-color: none;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Raleway',sans-serif;
+}
+
+#headergif {
+    margin-left: 290px;
+    padding-top: 50px;
+}
+
+#duckhunt {
+    height: 300px;
+    width: 400px;
+    margin-left: 180px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+#gamelabels {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Playfair Display',serif;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#Popular {
+    border-bottom: 0 #9C27B0 solid;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    border-bottom: 0 #9C27B0 solid;
+    background-color: none;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+#gamesinfo {
+    border-top: 1px #BDBDBD solid;
+    font-size: 12px;
+    font-family: 'Playfair Display',serif;
+    color: #000;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    border-bottom: 1px #BDBDBD solid;
+    padding-bottom: 20px;
+}
+
+#containerBars {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: none;
+    color: #000;
+    height: auto;
+    font-family: 'Playfair Display',serif;
+    font-size: 14px;
+}
+
+#status {
+    color: #000;
+    margin-left: 20px;
+    font-family: 'Playfair Display',serif;
+    font-size: 20px;
+}
+
+#bars {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    background-color: #9C27B0;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-left: 20px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px #000;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(255,255,255,0.25);
+}
+
+#progBars {
+    width: 210px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#label {
+    font-weight: 700;
+    color: #000;
+    margin-left: 20px;
+    font-family: 'Playfair Display',serif;
+    font-size: 18px;
+}
+
+#resultDescription {
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    font-size: 20px;
+}
+
+#analysis1 {
+    color: #000;
+    font-family: 'Playfair Display',serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: none;
+    height: auto;
+}
+
+#progressBarsDiv {
+    height: auto;
+}
+
+#analysisBars {
+    text-shadow: 1px 1px 2px #000;
+    width: 300px;
+    height: 30px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(255,255,255,0.25);
+}
+
+#bar0 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar1 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar2 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar3 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar4 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar5 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar6 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar7 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar8 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#bar9 {
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9C27B0;
+    border-radius: 8px;
+}
+
+#video {
+    margin-left: 200px;
+    box-shadow: 1px 1px 3px #000;
+    margin-top: 30px;
+}
+
+#answerKey {
+    margin-right: 100px;
+    margin-left: 60px;
+    background-color: none;
+}
+
+#questionKey {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Playfair Display',serif;
+    font-size: 18px;
+    color: #000;
+}
+
+#answ {
+    padding-bottom: 10px;
+    font-family: 'Playfair Display',serif;
+    font-size: 16px;
+    color: #000;
+}
+
+#corrects0 {
+    border-top: 1px grey solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Playfair Display',serif;
+    font-size: 14px;
+    color: grey;
+    text-align: justify;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9C27B0;
+    outline: 1px solid slategrey;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
